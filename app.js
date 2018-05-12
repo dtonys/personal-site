@@ -17,16 +17,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
   res.render('pages/home', {
-    title: 'Home - Simple Web Boilerplate',
+    title: 'Tony Schwartz',
   });
 });
-app.get('/demo', (req, res) => {
-  res.render('pages/demo', {
-    title: 'Demo - Simple Web Boilerplate',
+
+app.get('/projects', (req, res) => {
+  res.render('pages/projects', {
+    title: 'Tony Schwartz - Projects',
   });
-});
-app.post('/echo', (req, res) => {
-  res.json(req.body);
 });
 
 app.listen( process.env.PORT, () => {
