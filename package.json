@@ -34,7 +34,7 @@
     "build": "cross-env NODE_ENV=production gulp",
     "clean": "gulp clean",
     "start": "cross-env NODE_ENV=production PORT=8000 forever start --uid personal-site --append app.js",
-    "stop": "forever stop simple-web",
+    "stop": "forever stop personal-site",
     "lint-js": "eslint -c .eslintrc.js ./public/js gulpfile.js app.js"
   },
   "devDependencies": {}
