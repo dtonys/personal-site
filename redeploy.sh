@@ -1,5 +1,5 @@
 #!/bin/sh
-cd ~/webapps/simple-web-boilerplate
+cd ~/webapps/personal-site
 git pull origin master
 yarn
 npm run build
